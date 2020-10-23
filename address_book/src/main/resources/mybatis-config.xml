@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <environments default="xcan">
+        <environment id="xcan">
+            <transactionManager type="JDBC" />
+            <dataSource type="POOLED">
+                <property name="driver" value="org.postgresql.Driver" />
+                <property name="url" value="jdbc:postgresql://127.0.0.1:5432/address" />
+                <!-- 유저명과 패스워드는 기본값 사용예정 -->
+                <property name="username" value="postgres" />
+                <property name="password" value="postgres" />
+				<property name="poolPingEnabled" value="false" />
+	           <property name="driver.encoding" value="UTF-8"/>
+            </dataSource>
+        </environment>
+    </environments>
+    <mappers>
+        <package name="com.address.model" />
+        <package name="com.address.mapper" />
+    </mappers>
+</configuration>

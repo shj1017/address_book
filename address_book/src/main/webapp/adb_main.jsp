@@ -2,14 +2,13 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
   <!-- Header include -->
 	<%@ include file="/include/header.jsp" %>
   <!-- Header end -->   
 </head>
-
 <body>
 
   <!-- container section start -->
@@ -22,7 +21,6 @@
     <!--Sidebar start-->
     <%@ include file="/include/sidebar.jsp" %>
     <!-- Sidebar menu end-->
-    
     
     <!--main content start-->
     <section id="main-content">
@@ -43,15 +41,15 @@
             <section class="panel">
               
             
-            <!-- 테이블 행 갯수 설정  -->
+            <!-- 페이지마다 보여질 행 개수 설정  -->
 			<div class="col-lg-12">
                 	<div class="col-lg-2" style="padding-left: 0rem;">
               			<select class="form-control input-sm m-bot15" style="margin-bottom: 0.5rem;margin-top:0.5rem;">
                               <option value="10">10개씩 표시</option>
                               <option value="15">15개씩 표시</option>
                                <option value="20">20개씩 표시</option>
-                          </select>
-             	  </div>
+                        </select>
+             	   </div>
              </div>
   			<!-- end -->
   			
@@ -71,7 +69,7 @@
                   <tr >
                  <!-- for문으로 데이터 띄우기  -->
                   	<td >1</td>
-                    <td onClick = " location.href=' { 여기에 링크주소 } ' "  style="cursor:pointer;">삼성전자</td>
+                    <td onClick = "location.href='adb_detail.jsp'"  style="cursor:pointer;">삼성전자</td>
                     <td>으르르</td>
                     <td>123-456-7890</td>
                     <td>031-777-1234</td>
@@ -155,7 +153,6 @@
                   </tr>
                 </tbody>
               </table>
-              
             </section>
           </div>
         </div>
@@ -195,35 +192,15 @@
                   </ul>
                 </div>
         <!-- paging end -->
- 
     	 	</div>       
-	</div>
-        
+	    </div>
       </section>
     </section>
     <!--main content end-->
-    
-    
-    <div class="text-right">
-      <div class="credits">
-          <!--
-            All the links in the footer should remain intact.
-            You can delete the links only if you purchased the pro version.
-            Licensing information: https://bootstrapmade.com/license/
-            Purchase the pro version form: https://bootstrapmade.com/buy/?theme=NiceAdmin
-          -->
-          갓 디자이너님이 필요해</a>
-        </div>
-    </div>
   </section>
-  <!-- container section end -->
   
-  
-  <!-- javascripts start-->
+  <!-- javascript include -->
   <%@ include file="/include/script.jsp" %>
-  <!-- javascripts end-->
 
 </body>
-
 </html>
-
