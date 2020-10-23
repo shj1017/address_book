@@ -1,7 +1,7 @@
 package com.address.model;
 
 public class ADCompanyVO {
-	private int cp_seq;	
+	private int cpSeq;	
 	private String cpName;	
 	private String cpMName;	
 	private String cpMPhone;	
@@ -9,12 +9,12 @@ public class ADCompanyVO {
 	private String cpFax;
 	private String cpAddress;	
 	private String cpMemo;
-	
-	public int getCp_seq() {
-		return cp_seq;
+
+	public int getCpSeq() {
+		return cpSeq;
 	}
-	public void setCp_seq(int cp_seq) {
-		this.cp_seq = cp_seq;
+	public void setCpSeq(int cpSeq) {
+		this.cpSeq = cpSeq;
 	}
 	public String getCpName() {
 		return cpName;

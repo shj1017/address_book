@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.address.mapper.MUserMapper">
+  <resultMap id="BaseResultMap" type="com.address.model.ADCompanyVO">
+
+    <result column="cp_seq" jdbcType="INTEGER" property="cpSeq" />
+    <result column="cp_name" jdbcType="VARCHAR" property="cpName" />
+    <result column="cp_m_name" jdbcType="VARCHAR" property="cpMName" />
+    <result column="cp_m_phone" jdbcType="VARCHAR" property="cpMPhone" />
+    <result column="cp_m_mail" jdbcType="VARCHAR" property="cpMMail" />
+    <result column="cp_fax" jdbcType="VARCHAR" property="cpFax" />
+    <result column="cp_address" jdbcType="VARCHAR" property="cpAddress" />
+    <result column="cp_memo" jdbcType="VARCHAR" property="cpMemo" />
+  </resultMap>
+  
+</mapper>
