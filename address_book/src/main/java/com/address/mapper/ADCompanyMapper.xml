@@ -5,9 +5,6 @@
 
     <result column="cp_seq" jdbcType="INTEGER" property="cpSeq" />
     <result column="cp_name" jdbcType="VARCHAR" property="cpName" />
-    <result column="cp_m_name" jdbcType="VARCHAR" property="cpMName" />
-    <result column="cp_m_phone" jdbcType="VARCHAR" property="cpMPhone" />
-    <result column="cp_m_mail" jdbcType="VARCHAR" property="cpMMail" />
     <result column="cp_fax" jdbcType="VARCHAR" property="cpFax" />
     <result column="cp_address" jdbcType="VARCHAR" property="cpAddress" />
     <result column="cp_memo" jdbcType="VARCHAR" property="cpMemo" />

@@ -105,17 +105,9 @@
             <div class="col-lg-12">
               <a class="btn btn-default" href="Address_memo_new.html" title="Bootstrap 3 themes generator" style="float:right;">글쓰기</a>
               </div>
-            
           </div>
-          
-
-          
-
         </div>
         <!-- page end-->
-        
-
-        
         
         <!-- serch start >>>>>>>>>>>>>>>>>>>>>>>>>>> -->
         <div class="col-lg-12" style="margin-top: 10px;">    
