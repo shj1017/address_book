@@ -5,44 +5,10 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Creative - Bootstrap 3 Responsive Admin Template">
-  <meta name="author" content="GeeksLabs">
-  <meta name="keyword" content="Creative, Dashboard, Admin, Template, Theme, Bootstrap, Responsive, Retina, Minimal">
-  <link rel="shortcut icon" href="img/favicon.png">
-
-  <title>주소록 관리</title>
-
-  <!-- Bootstrap CSS -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <!-- bootstrap theme -->
-  <link href="css/bootstrap-theme.css" rel="stylesheet">
-  <!--external css-->
-  <!-- font icon -->
-  <link href="css/elegant-icons-style.css" rel="stylesheet" />
-  <link href="css/font-awesome.min.css" rel="stylesheet" />
-  <!-- Custom styles -->
-  <link href="css/style.css" rel="stylesheet">
-  <link href="css/style-responsive.css" rel="stylesheet" />
-
-  <!-- HTML5 shim and Respond.js IE8 support of HTML5 -->
-  <!--[if lt IE 9]>
-      <script src="js/html5shiv.js"></script>
-      <script src="js/respond.min.js"></script>
-      <script src="js/lte-ie7.js"></script>
-    <![endif]-->
-
-    <!-- =======================================================
-      Theme Name: NiceAdmin
-      Theme URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
-      Author: BootstrapMade
-      Author URL: https://bootstrapmade.com
-    ======================================================= -->
-    
-     
+  <!-- Header include -->
+	<%@ include file="/include/header.jsp" %>
+  <!-- Header end -->   
 </head>
-
 <body>
 
   <!-- container section start -->
@@ -63,8 +29,7 @@
           <div class="col-lg-12">
             <h3 class="page-header"><i class="fa fa-files-o"></i>메모장</h3>
             <ol class="breadcrumb">
-              <li><i class="fa fa-home"></i><a href="Address_book.html">Address Book</a></li>
-              <li><i class="fa fa-files-o"></i>Memo</li>
+              <li><i class="fa fa-files-o"></i><a href="adb_memo.jsp">Memo</a></li>
             </ol>
           </div>
         </div>
@@ -99,13 +64,13 @@
                     <th style="width:7%"><i class="icon_cogs"></i> 삭제</th>
                   </tr>
           
-                  <tr >
+                  <tr>
                   	<td>1</td>
                     <td>삼성전자</td>
-                    <td onClick = " location.href=' ' " style="cursor:pointer;">삼성전사 미수금 건</td>
+                    <td onClick = " location.href='adb_memo_detail.jsp' " style="cursor:pointer;">삼성전사 미수금 건</td>
                     <td>으르르</td>
                     <td>123-456-7890</td>
-                     <td><a class="btn btn-danger" href="#"><i class="icon_close_alt2"></i></a></td>
+                     <td><a class="btn btn-danger" href="adb_memo_detail.jsp"><i class="icon_close_alt2"></i></a></td>
                   </tr>
                   <tr>
                     <td>2</td>
@@ -155,7 +120,7 @@
         <!-- serch start >>>>>>>>>>>>>>>>>>>>>>>>>>> -->
         <div class="col-lg-12" style="margin-top: 10px;">    
         	<div class="row"> 
-           		<div class="col-lg-2" style="text-align:right; padding-right: 0rem;">
+           		<div class="col-lg-2" style="text-align:right;padding-right: 0rem;padding-left: 0px;">
                   <select class="form-control m-bot15" >
                       <option>제목</option>
                       <option>내용</option>
@@ -163,7 +128,7 @@
                       <option>담당자명</option>
                    </select>
                 </div>                
-                <div class="col-lg-5" style="padding-left: 0.5rem; padding-right:0rem;">
+                <div class="col-lg-5" style="text-align:right;padding-right: 0rem;padding-left: 0px;">
                          <input type="text" class="form-control" placeholder="검색어를 입력해 주세요." >
                         
   			  	</div> 
@@ -206,17 +171,9 @@
         </div>
     </div>
   </section>
-  <!-- container section end -->
-  <!-- javascripts -->
-  <script src="js/jquery.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <!-- nicescroll -->
-  <script src="js/jquery.scrollTo.min.js"></script>
-  <script src="js/jquery.nicescroll.js" type="text/javascript"></script>
-  <!--custome script for all page-->
-  <script src="js/scripts.js"></script>
 
+  <!-- javascript include -->
+  <%@ include file="/include/script.jsp" %>
 
 </body>
-
 </html>

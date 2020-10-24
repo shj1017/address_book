@@ -6,6 +6,7 @@ public class ADManagerVO {
 	private String mgName;	
 	private String mgPhone;	
 	private String mgMail;
+	private String mgGubun;
 
 	public int getMgSeq() {
 		return mgSeq;
@@ -37,5 +38,10 @@ public class ADManagerVO {
 	public void setMgMail(String mgMail) {
 		this.mgMail = mgMail;
 	}
-	
+	public String getMgGubun() {
+		return mgGubun;
+	}
+	public void setMgGubun(String mgGubun) {
+		this.mgGubun = mgGubun;
+	}
 }

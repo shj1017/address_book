@@ -39,7 +39,6 @@
         <div class="row">
           <div class="col-lg-12">
             <section class="panel">
-              
             
             <!-- 페이지마다 보여질 행 개수 설정  -->
 			<div class="col-lg-12">
